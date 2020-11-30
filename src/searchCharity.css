@@ -1,0 +1,39 @@
+.form {
+    display: grid;
+}
+
+.label {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+}
+
+.input {
+    font-size: 1.6rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    padding: 1rem 2rem;
+    outline-width: 0ch;
+    border-radius: 20px;
+    background-color: var(--dark);
+    color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(224, 224, 224);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:  rgb(224, 224, 224);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:  rgb(224, 224, 224);
+}

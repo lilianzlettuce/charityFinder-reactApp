@@ -1,17 +1,55 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import LandingPage from './LandingPage.js';
+import SearchByCatPage from './SearchByCat';
+import SearchPage from './SearchCharity';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+class Main extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      page: 1 //1- landing page, 2- search by name page, 3- search by cat page
+    }
+    this.switchPage = this.switchPage.bind(this);
+    this.showSearchCat = this.showSearchCat.bind(this);
+  }
+  switchPage() { //for switching btw the 2 pages after already clicking on in landing page
+    if (this.state.page === 2) {
+      this.setState({
+        page: 3
+      });
+    } else {
+      this.setState({
+        page: 2
+      });
+    }
+  }
+
+  showSearchCat = e => {
+    if (e.target.id === 'catBtn'){
+      this.setState({
+        page: 3
+      });
+    } else {
+      this.setState({
+        page: 2
+      });
+    }
+  }
+
+  render() {
+    return(
+      <div>
+        {this.state.page === 1 && <LandingPage showSearchCat={this.showSearchCat}/>}
+        {this.state.page === 2 && <SearchPage switchPage={this.switchPage}/>}
+        {this.state.page === 3 && <SearchByCatPage switchPage={this.switchPage}/>}
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<Main/>, document.getElementById('root'));
+

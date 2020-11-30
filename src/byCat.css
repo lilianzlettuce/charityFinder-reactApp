@@ -1,0 +1,12 @@
+#catBox{
+    margin: auto;
+}
+  
+.catBtn{
+    background-color: var(--main-light);
+    margin: .5rem .5rem;
+}
+
+h1{
+    margin-top: 3.5rem;
+}

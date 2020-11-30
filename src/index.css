@@ -1,13 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat&display=swap');
+
+:root {
+  --highlight: rgb(230, 57, 70);
+  --light: rgb(241, 250, 238);
+  --dark: rgb(29, 53, 87);
+  --main-light: rgb(166, 232, 233);
+  --main-dark: rgb(65, 123, 158);
+}
+
+html{
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  background-color: rgb(247, 247, 247);
+  color: rgb(54, 54, 54);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h3{
+  font-size: 2.7rem;
+  color: var(--main-light);
+}
+
+p {
+  font-size: 1.9rem;
+  font-family: Barlow, sans-serif;
+}
+
+small {
+  font-size: 1.5rem;
+  font-family: Montserrat, sans-serif;
+}
+
+a, a:hover, a:focus, a:active, a:visited, a:link {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px;
+}
+
+.title {
+  font-size: 4.4rem;
+  color: var(--highlight);
+  text-align: left;
+}
+
+i{
+  color: var(--main-dark);
+}
+
+.button1 {
+  display: inline-block;
+  border: none;
+  border-radius: 20px;
+  padding: .9rem 1.5rem;
+  margin: 0;
+  outline-width: 0ch;
+  text-decoration: none;
+  background: var(--main-dark);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.button1:hover,
+.button1:focus {
+  transform: scale(1.03);
+  background: var(--dark);
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.button1:active {
+  transform: scale(0.95);
+  color: white !important;
+  text-decoration: none !important;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.switchBtn {
+  display: inline-block;
+  border: none;
+  border-radius: 20px;
+  padding: .5rem 1rem;
+  margin: 0;
+  outline-width: 0ch;
+  text-decoration: none;
+  color: var(--main-dark);
+  background-color: transparent;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  cursor: pointer;
+  text-align: center;
+  transition: color 250ms ease-in-out, 
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.switchBtn:hover,
+.switchBtn:focus {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.card {
+  padding: 1.2rem 4rem 3rem 4rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+  margin: 3rem 0rem;
+  background-color: white;
+}
+
+.extraSmall{
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+}
+
+.emptySpace{
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.flexContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  align-items: baseline;
+  margin: 0;
+}
+
+@media (max-width: 300px) {
+  html{
+    font-size: 8px;
+  }
+
+  #mission{
+    display: none;
+  }
+
+  .button1{
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 400px){
+  .container{
+    padding: 10px;
+  }
+}
+
+@media (max-width: 510px) {
+  .flexContainer{
+    display: block;
+  }
+
+  #firstI{
+    width:auto;
+    max-width: 100%;
+  }
+
+  #secondI{
+    width: auto;
+    max-width: 100%;
+    padding: 1rem 1.5rem;
+  }
+
+  .input{
+    max-width: 100%;
+  }
+}
+
+.flexItem{
+  width:auto;
+  max-width: 50%;
+}
+
+.smallBox{
+  background-color: var(--dark);
+  padding: 0rem 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  width: auto;
+  max-width: 35%;
+  height: 50%;
+  color: white;
+  box-shadow: 0px 0px 50px 20px var(--light);
+  font-family: Montserrat, sans-serif;
 }
