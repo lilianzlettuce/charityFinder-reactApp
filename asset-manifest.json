@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/charityFinder-reactApp/static/css/main.17a57860.chunk.css",
+    "main.js": "/charityFinder-reactApp/static/js/main.952f5a85.chunk.js",
+    "main.js.map": "/charityFinder-reactApp/static/js/main.952f5a85.chunk.js.map",
+    "runtime-main.js": "/charityFinder-reactApp/static/js/runtime-main.e051801c.js",
+    "runtime-main.js.map": "/charityFinder-reactApp/static/js/runtime-main.e051801c.js.map",
+    "static/js/2.69ad37f9.chunk.js": "/charityFinder-reactApp/static/js/2.69ad37f9.chunk.js",
+    "static/js/2.69ad37f9.chunk.js.map": "/charityFinder-reactApp/static/js/2.69ad37f9.chunk.js.map",
+    "index.html": "/charityFinder-reactApp/index.html",
+    "static/css/main.17a57860.chunk.css.map": "/charityFinder-reactApp/static/css/main.17a57860.chunk.css.map",
+    "static/js/2.69ad37f9.chunk.js.LICENSE.txt": "/charityFinder-reactApp/static/js/2.69ad37f9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e051801c.js",
+    "static/js/2.69ad37f9.chunk.js",
+    "static/css/main.17a57860.chunk.css",
+    "static/js/main.952f5a85.chunk.js"
+  ]
+}
