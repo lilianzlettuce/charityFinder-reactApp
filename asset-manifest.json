@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/veracity/static/css/main.f8129864.chunk.css",
-    "main.js": "/veracity/static/js/main.3added7b.chunk.js",
-    "main.js.map": "/veracity/static/js/main.3added7b.chunk.js.map",
-    "runtime-main.js": "/veracity/static/js/runtime-main.d698f0de.js",
-    "runtime-main.js.map": "/veracity/static/js/runtime-main.d698f0de.js.map",
-    "static/js/2.1ea2c8c6.chunk.js": "/veracity/static/js/2.1ea2c8c6.chunk.js",
-    "static/js/2.1ea2c8c6.chunk.js.map": "/veracity/static/js/2.1ea2c8c6.chunk.js.map",
+    "main.js": "/veracity/static/js/main.61434232.chunk.js",
+    "main.js.map": "/veracity/static/js/main.61434232.chunk.js.map",
+    "runtime-main.js": "/veracity/static/js/runtime-main.d245ad81.js",
+    "runtime-main.js.map": "/veracity/static/js/runtime-main.d245ad81.js.map",
+    "static/js/2.f564f038.chunk.js": "/veracity/static/js/2.f564f038.chunk.js",
+    "static/js/2.f564f038.chunk.js.map": "/veracity/static/js/2.f564f038.chunk.js.map",
     "index.html": "/veracity/index.html",
     "static/css/main.f8129864.chunk.css.map": "/veracity/static/css/main.f8129864.chunk.css.map",
-    "static/js/2.1ea2c8c6.chunk.js.LICENSE.txt": "/veracity/static/js/2.1ea2c8c6.chunk.js.LICENSE.txt"
+    "static/js/2.f564f038.chunk.js.LICENSE.txt": "/veracity/static/js/2.f564f038.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d698f0de.js",
-    "static/js/2.1ea2c8c6.chunk.js",
+    "static/js/runtime-main.d245ad81.js",
+    "static/js/2.f564f038.chunk.js",
     "static/css/main.f8129864.chunk.css",
-    "static/js/main.3added7b.chunk.js"
+    "static/js/main.61434232.chunk.js"
   ]
 }
