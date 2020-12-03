@@ -27,7 +27,7 @@ function Search(){
         const app_key = '0f9bf5ff05f6253e83ca4798ae45ee03';
         const search = query;
         const numReturn = 50;
-        const url = `https://api.data.charitynavigator.org/v2/Organizations?app_id=${app_id}&app_key=${app_key}&pageSize=${numReturn}&search=${search}&minRating=4`;
+        const url = `https://api.data.charitynavigator.org/v2/Organizations?app_id=${app_id}&app_key=${app_key}&pageSize=${numReturn}&search=${search}&minRating=1`;
         console.log(search);
     
         try {

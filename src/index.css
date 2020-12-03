@@ -59,8 +59,22 @@ a, a:hover, a:focus, a:active, a:visited, a:link {
   text-align: left;
 }
 
-i{
+.tagline{
   color: var(--main-dark);
+  margin-left: 1rem;
+}
+
+.score{
+  background-color: var(--dark);
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  padding: .4rem .8rem;
+  text-align: center;
+  text-justify: inter-word;
+  margin-left: 1rem;
 }
 
 .button1 {

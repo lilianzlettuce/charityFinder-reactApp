@@ -8,7 +8,8 @@
     font-size: 7rem;
     width: 65%;
     padding: 5%;
-    margin: auto;
+    margin: 2rem auto -5rem auto;
+    text-align: center;
 }
 
 h2{
@@ -68,11 +69,13 @@ h2{
     padding: 1.3rem 2.5rem;
     margin: 0rem 2rem;
     min-width: 160px;
+    transform: scale(.95);
 }
 
 .button2:hover, .button2:focus{
     background-color: var(--main-light);
     border: 0px solid white;
+    transform: scale(0.98);
 }
 
 .button2:active{
@@ -82,4 +85,7 @@ h2{
 h4{
     font-size: 2.5rem;
     color: var(--dark);
+    text-align: center;
+    margin: 3rem auto;
+    font-weight: 400;
 }

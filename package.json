@@ -1,8 +1,8 @@
 {
-  "name": "charity-finder",
-  "version": "0.1.0",
+  "name": "Veracity",
+  "version": "0.1.1",
   "private": true,
-  "homepage": "http://lilianzlettuce.github.io/charityFinder-reactApp",
+  "homepage": "http://lilianzlettuce.github.io/veracity",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
