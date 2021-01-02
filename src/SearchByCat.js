@@ -15,8 +15,8 @@ export default function SearchByCatPage(props) {
         e.preventDefault();
         setCalled(true);
 
-        const app_id = '7a415b84';
-        const app_key = '0f9bf5ff05f6253e83ca4798ae45ee03';
+        const app_id = 'bc7e7002';
+        const app_key = '5f7342d4b8b9886f6099fd0aeecc81b8';
         const catname = e.target.id;
 
         let cat_id = '';

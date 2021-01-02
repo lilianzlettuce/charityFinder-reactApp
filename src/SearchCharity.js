@@ -23,8 +23,8 @@ function Search(){
         e.preventDefault();
         setCalled(true);
         
-        const app_id = '7a415b84';
-        const app_key = '0f9bf5ff05f6253e83ca4798ae45ee03';
+        const app_id = 'bc7e7002';
+        const app_key = '5f7342d4b8b9886f6099fd0aeecc81b8';
         const search = query;
         const numReturn = 50;
         const url = `https://api.data.charitynavigator.org/v2/Organizations?app_id=${app_id}&app_key=${app_key}&pageSize=${numReturn}&search=${search}&minRating=1`;
