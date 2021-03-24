@@ -4,7 +4,7 @@ import './landing.css';
 export default function LandingPage(props){
     return(
         <div className='containerFull'>
-            <h1 id='title'>Hello, welcome to <span className='highlight'>Veracity</span>.</h1>
+            <h1 id='title'>Hello, welcome to <span className='highlight'>urmom</span>.</h1>
             <h4>Find reliable charities you can trust.</h4>
             <div className='flexBox' id='flexBoxFrontPage'>
                 <div>
