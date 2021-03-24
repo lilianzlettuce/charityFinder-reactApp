@@ -5,79 +5,79 @@ import Card from './Card.js';
 export default function SearchByCatPage(props) {
     const [cats] = useState(['Animals', 'Arts, Culture, Humanities', 'Community Development', 
     'Education', 'Environment', 'Health', 'Human and Civil Rights', 'Human Services', 
-    'International', 'Research and Public Policy', 'Religion']);
+    'International', 'Research and Public Policy', 'Religion'])
 
-    const [called, setCalled] = useState(false);
+    const [called, setCalled] = useState(false)
 
-    let [orgs, setOrgs] = useState([]);
+    let [orgs, setOrgs] = useState([])
 
     const catClicked = async(e) => {
-        e.preventDefault();
-        setCalled(true);
+        e.preventDefault()
+        setCalled(true)
 
-        const app_id = 'bc7e7002';
-        const app_key = '5f7342d4b8b9886f6099fd0aeecc81b8';
-        const catname = e.target.id;
+        const app_id = 'bc7e7002'
+        const app_key = '5f7342d4b8b9886f6099fd0aeecc81b8'
+        const catname = e.target.id
 
-        let cat_id = '';
+        let cat_id = ''
         switch(catname) {
             case 'Animals':
-                cat_id = '1';
-                break;
+                cat_id = '1'
+                break
             case 'Arts, Culture, Humanities':
-                cat_id = '2';
-                break;
+                cat_id = '2'
+                break
             case 'Community Development':
-                cat_id = '10';
-                break;
+                cat_id = '10'
+                break
             case 'Education':
-                cat_id = '3';
-                break;
+                cat_id = '3'
+                break
             case 'Environment':
-                cat_id = '4';
-                break;
+                cat_id = '4'
+                break
             case 'Health':
-                cat_id = '5';
-                break;
+                cat_id = '5'
+                break
             case 'Human and Civil Rights':
-                cat_id = '8';
-                break;
+                cat_id = '8'
+                break
             case 'Human Services':
-                cat_id = '6';
-                break;
+                cat_id = '6'
+                break
             case 'International':
-                cat_id = '7';
-                break; 
+                cat_id = '7'
+                break
             case 'Research and Public Policy':
                 cat_id = '11';
-                break;
+                break
             case 'Religion':
-                cat_id = '9';
-                break; 
+                cat_id = '9'
+                break
             default:
                 cat_id = 1;
         }
 
-        console.log(cat_id);
+        console.log(cat_id)
         const numReturn = 1000;
         const url = `https://api.data.charitynavigator.org/v2/Organizations?app_id=${app_id}&app_key=${app_key}&categoryID=${cat_id}&pageSize=${numReturn}&minRating=4`;
 
-        let allOrgs = [];
-        let tenOrgs = [];
+        let allOrgs = []
+        let tenOrgs = []
 
         try{
-            const res = await fetch(url);
-            const data = await res.json();
-            allOrgs = data;
-            console.log(data);
+            const res = await fetch(url)
+            const data = await res.json()
+            allOrgs = data
+            console.log(data)
 
-            const numArr = genRandom(10, allOrgs.length);
+            const numArr = genRandom(10, allOrgs.length)
             for (let i = 0; i < numArr.length; i++) {
-                tenOrgs[i] = allOrgs[numArr[i]];
+                tenOrgs[i] = allOrgs[numArr[i]]
             }
-            setOrgs(tenOrgs);
+            setOrgs(tenOrgs)
         }catch(err){
-            console.log(err);
+            console.log(err)
         }
     }
 

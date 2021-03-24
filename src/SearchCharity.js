@@ -15,28 +15,28 @@ export default function SearchPage(props){
 function Search(){
 
     //states- input query, movies
-    const [query, setQuery] = useState('');
-    const [matches, setMatches] = useState([]);
-    const [called, setCalled] = useState(false);
+    const [query, setQuery] = useState('')
+    const [matches, setMatches] = useState([])
+    const [called, setCalled] = useState(false)
 
     const searchCharities = async (e) => {
-        e.preventDefault();
-        setCalled(true);
+        e.preventDefault()
+        setCalled(true)
         
-        const app_id = 'bc7e7002';
-        const app_key = '5f7342d4b8b9886f6099fd0aeecc81b8';
-        const search = query;
-        const numReturn = 50;
-        const url = `https://api.data.charitynavigator.org/v2/Organizations?app_id=${app_id}&app_key=${app_key}&pageSize=${numReturn}&search=${search}&minRating=1`;
-        console.log(search);
+        const app_id = 'bc7e7002'
+        const app_key = '5f7342d4b8b9886f6099fd0aeecc81b8'
+        const search = query
+        const numReturn = 50
+        const url = `https://api.data.charitynavigator.org/v2/Organizations?app_id=${app_id}&app_key=${app_key}&pageSize=${numReturn}&search=${search}&minRating=1`
+        console.log(search)
     
         try {
-            const res = await fetch(url);
-            const data = await res.json();
-            console.log(data);
-            setMatches(data);
+            const res = await fetch(url)
+            const data = await res.json()
+            console.log(data)
+            setMatches(data)
         } catch(err) {
-            console.log(err);
+            console.log(err)
         }
     }
 
