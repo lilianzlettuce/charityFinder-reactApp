@@ -23,8 +23,8 @@ function Search(){
         e.preventDefault()
         setCalled(true)
         
-        const app_id = 'bc7e7002'
-        const app_key = '5f7342d4b8b9886f6099fd0aeecc81b8'
+        const app_id = '8287c455'
+        const app_key = '725ca9a640d71349bba6341aa207ce6c'
         const search = query
         const numReturn = 50
         const url = `https://api.data.charitynavigator.org/v2/Organizations?app_id=${app_id}&app_key=${app_key}&pageSize=${numReturn}&search=${search}&minRating=1`

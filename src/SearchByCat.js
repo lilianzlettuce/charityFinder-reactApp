@@ -15,8 +15,8 @@ export default function SearchByCatPage(props) {
         e.preventDefault()
         setCalled(true)
 
-        const app_id = 'bc7e7002'
-        const app_key = '5f7342d4b8b9886f6099fd0aeecc81b8'
+        const app_id = '8287c455'
+        const app_key = '725ca9a640d71349bba6341aa207ce6c'
         const catname = e.target.id
 
         let cat_id = ''
@@ -58,7 +58,6 @@ export default function SearchByCatPage(props) {
                 cat_id = 1;
         }
 
-        console.log(cat_id)
         const numReturn = 1000;
         const url = `https://api.data.charitynavigator.org/v2/Organizations?app_id=${app_id}&app_key=${app_key}&categoryID=${cat_id}&pageSize=${numReturn}&minRating=4`;
 
@@ -76,6 +75,7 @@ export default function SearchByCatPage(props) {
                 tenOrgs[i] = allOrgs[numArr[i]]
             }
             setOrgs(tenOrgs)
+            console.log(allOrgs[0].currentRating.score)
         }catch(err){
             console.log(err)
         }
