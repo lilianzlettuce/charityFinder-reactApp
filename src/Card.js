@@ -7,7 +7,7 @@ export default function Card({orgs}) {
                 <div className='card' key={org.charityName}>
                     <div className='flexContainer'>
                         <div className='flexItem' id='firstI'>
-                            <h3 className='cardTitle'>{org.charityName} <span className='score'>{org.currentRating.score}</span></h3>
+                            <h3 className='cardTitle'>{org.charityName} <span className='score'>{genRandom90() /*org.currentRating.score*/}</span></h3>
                             <p className='tagline'><i>{org.tagLine}</i></p>
                         </div>
                         <div className='smallBox' id='secondI'>
@@ -22,4 +22,8 @@ export default function Card({orgs}) {
             )}
         </div>
     );
+}
+
+const genRandom90 = () => {
+    return (Math.random() * 10 + 90).toFixed(2);
 }
